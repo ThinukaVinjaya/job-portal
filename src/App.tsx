@@ -1,11 +1,14 @@
 
 import './App.css';
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, Slider } from '@mantine/core';
+import '@mantine/core/styles.css';
+import HomePage from './Pages/HomePage';
+
 
 function App() {
   return (
     <MantineProvider>
-      <h1 className="text-3xl font-bold underline">Hello World</h1>
+      <HomePage/>
     </MantineProvider>
   );
 }
