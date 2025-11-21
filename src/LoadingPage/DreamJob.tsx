@@ -1,6 +1,10 @@
 import React from 'react'
 import Boy from "../assets/Boy.png";
-import { TextInput } from '@mantine/core';
+import Avatar0 from "../assets/avatar.png";
+import Avatar1 from "../assets/avatar1.png";
+import Avatar2 from "../assets/avatar2.png";
+import Google from "../assets/Icons/Google.png";
+import { Avatar, TextInput } from '@mantine/core';
 import { IconSearch } from '@tabler/icons-react';
 
 const DreamJob = () => {
@@ -30,9 +34,32 @@ const DreamJob = () => {
             </div>
         </div>
         <div className='w-[55%] flex items-center justify-center'>
-            <div className='w-[40rem]'> 
+            <div className='w-[40rem] relative'> 
                 <img src={Boy} alt='boy' />
-
+            <div className='absolute -right-10 w-fit top-[50%] border-bright-sun-400 border rounded-lg p-2 backdrop-blur-md'>
+                <div className='text-center mb-1 text-sm text-mine-shaft-100'>10k+ got job</div>
+                <Avatar.Group>
+                    <Avatar src={Avatar0} />
+                    <Avatar src={Avatar1} />
+                    <Avatar src={Avatar2} />
+                    <Avatar>+9K</Avatar>
+                </Avatar.Group>
+            </div>
+            <div className='absolute -left-5 w-fit top-[28%] border-bright-sun-400 border rounded-lg p-2 backdrop-blur-md gap-3 flex flex-col'>
+                <div className='flex gap-2 items-center'>
+                    <div className='w-10 h-10 p-1 bg-mine-shaft-900 rounded-lg'>
+                        <img src={Google} alt='' />
+                    </div>
+                    <div className='text-sm text-mine-shaft-100'>
+                        <div>Software Engineer</div>
+                        <div className='text-mine-shaft-200 text-xs'>Colombo</div>
+                    </div>
+                </div>
+                <div className='flex gap-2 justify-around text-mine-shaft-200 text-xs'>
+                    <span>1 day ago</span>
+                    <span>120 Applicants</span>
+                </div>
+            </div>
             </div>
         </div>
     </div>
