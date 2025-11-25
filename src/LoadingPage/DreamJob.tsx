@@ -3,7 +3,7 @@ import Boy from "../assets/Boy.png";
 import Avatar0 from "../assets/avatar.png";
 import Avatar1 from "../assets/avatar1.png";
 import Avatar2 from "../assets/avatar2.png";
-import Google from "../assets/Icons/Google.png";
+import Google from "../assets/Google.png";
 import { Avatar, TextInput } from '@mantine/core';
 import { IconSearch } from '@tabler/icons-react';
 
