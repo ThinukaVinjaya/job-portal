@@ -5,18 +5,18 @@ import { Divider, Text } from '@mantine/core'
 
 const JobCard = (props:any) => {
     return (
-        <div className='bg-mine-shaft-900 p-4 w-72 flex flex-col gap-3 rounded-xl hover:shadow-[0_0_5px_1px_yellow] !shadow-bright-sun-400'>
+        <div className='bg-mine-shaft-900 p-4 ease-in-out w-72 flex flex-col gap-3 rounded-xl hover:shadow-[0_0_5px_1px_yellow] !shadow-bright-sun-400'>
             <div className='flex justify-between'>
                 <div className='flex gap-2 items-center'>
                     <div className='p-2 bg-mine-shaft-800 rounded-md'>
                         <img className="h-7" src={`Icons/${props.company}.png`} alt='' />
                     </div>
-                    <div>
+                    <div className='flex flex-col gap-1'>
                         <div className='font-semibold'>{props.jobTitle}</div>
                         <div className='text-xs text-mine-shaft-300'>{props.company} &#x2022; {props.applicants} Applicants</div>
                     </div>
                 </div>
-                <IconBookmark className='text-mine-shaft-300 cursor-pointer'/>
+                <IconBookmark className='text-mine-shaft-300 cursor-pointer stroke={1.5}'/>
             </div>
             <div className='flex gap-2 [&>div]:py-1 [&>div]:px-2 [&>div]:bg-mine-shaft-800 [&>div]:text-bright-sun-400 [&>div]:rounded-lg text-xs'>
                 <div>{props.experience}</div>

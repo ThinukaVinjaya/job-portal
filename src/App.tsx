@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import FingJobs from './Pages/FingJobs';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import FindTalentPage from './Pages/FindTalentPage';
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
         '#3d3d3d',
         '#2d2d2d',
       ]
-    },fontFamily: 'Poppins, sans-serif'
+    }, fontFamily: 'Poppins, sans-serif'
   })
 
   return (
@@ -46,6 +47,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/find-jobs' element={<FingJobs />} />
+          <Route path='/find-talent' element={<FindTalentPage />} />
           <Route path='*' element={<HomePage />} />
         </Routes>
         <Footer />

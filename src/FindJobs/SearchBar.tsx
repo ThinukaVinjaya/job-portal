@@ -5,15 +5,17 @@ import { Divider, RangeSlider } from '@mantine/core'
 
 const SearchBar = () => {
 
-    const [value, setValue] = useState<[number, number]>([1, 1000]);
+    const [value, setValue] = useState<[number, number]>([1, 100]);
     return (
-        <div className='flex px-5 py-8'>
+        <div className='flex px-5 py-8 items-center !text-mine-shaft-100'>
             {
-                dropdownData.map((item, index) => <><div key={index} className='w-1/5'>
-                    <MultiInput {...item} />
+                dropdownData.map((item, index) => {
+                
+                return <><div key={index} className='w-1/5'>
+                    <MultiInput title={item.title} icon={item.icon} options={item.options} />
                 </div>
                     <Divider mr="xs" size='xs' orientation='vertical' />
-                </>)
+                </>})
             }
             <div className="w-1/5 [&_.maintine-Slider-label]:!translate-y-10">
             <div className='flex text-sm justify-between'>
