@@ -4,7 +4,7 @@ import { footerLinks } from '../Data/Data';
 
 const Footer = () => {
   return (
-    <div className="mt-20 pb-10 flex flex-wrap gap-10 justify-around">
+    <div className="pt-20 pb-10 flex flex-wrap gap-10 justify-around  bg-mine-shaft-950 font-['poppins']">
 
       {/* Left Section */}
       <div className="w-full md:w-1/4 flex flex-col gap-4">
