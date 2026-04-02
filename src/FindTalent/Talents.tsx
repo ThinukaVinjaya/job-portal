@@ -11,7 +11,7 @@ const Talents = () => {
                 <div className='text-2xl font-semibold'>Talents</div>
                 <Sort />
             </div>
-            <div className='mt-10 flex flex-wrap gap-11 justify-center'>
+            <div className='mt-10 flex flex-wrap gap-11 justify-between'>
                 {
                     talents.map((talents, index) => 
                          <TalentsCard key={index} {...talents} />

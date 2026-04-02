@@ -10,7 +10,8 @@ const FindTalentPage = () => {
             <Divider  size="xs" mx="md" />
             <SearchBar />
             <Divider size="xs" mx="md" />
-            <Talents />
+            <div className='ml-28 mr-28'><Talents /></div>
+            
         </div>
   )
 }
