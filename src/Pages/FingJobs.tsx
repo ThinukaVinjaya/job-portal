@@ -10,7 +10,7 @@ const FingJobs = () => {
             <Divider  size="xs" mx="md" />
             <SearchBar />
             <Divider  mr="xs" mx="md" />
-            <Jobs />
+            <div className='ml-24 mr-24'><Jobs /></div>
         </div>
     )
 }
