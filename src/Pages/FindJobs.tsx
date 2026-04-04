@@ -4,7 +4,7 @@ import { Divider } from '@mantine/core';
 import Jobs from '../FindJobs/Jobs';
  
 
-const FingJobs = () => {
+const FindJobs = () => {
     return (
         <div className="min-h-[80vh] bg-mine-shaft-950 font-['poppins']">
             <Divider  size="xs" mx="md" />
@@ -15,4 +15,4 @@ const FingJobs = () => {
     )
 }
     
-export default FingJobs
+export default FindJobs

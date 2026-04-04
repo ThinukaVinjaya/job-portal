@@ -6,13 +6,14 @@ import '@mantine/carousel/styles.css';
 import '@mantine/tiptap/styles.css';
 import HomePage from './Pages/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FingJobs from './Pages/FingJobs';
+import FingJobs from './Pages/FindJobs';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import FindTalentPage from './Pages/FindTalentPage';
-import TalentProfilePage from './Pages/TalentProfilePage';
 import PostJobPage from './Pages/PostJobPage';
 import JobDescPage from './Pages/JobDescPage';
+import FindJobs from './Pages/FindJobs';
+import TalentProfilePage from './Pages/TalentProfilePage';
 
 function App() {
 
@@ -54,10 +55,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/find-jobs' element={<FingJobs />} />
+          <Route path='/find-jobs' element={<FindJobs />} />
           <Route path='/find-talent' element={<FindTalentPage />} />
           <Route path='/jobs' element={<JobDescPage />} />
-          <Route path='post-job' element={<PostJobPage />} />
+          <Route path='/post-job' element={<PostJobPage />} />
           <Route path='/talent-profile' element={<TalentProfilePage />} />
           <Route path='*' element={<HomePage />} />
         </Routes>
