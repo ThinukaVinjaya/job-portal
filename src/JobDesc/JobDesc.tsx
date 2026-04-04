@@ -20,7 +20,7 @@ const JobDesc = () => {
                     </div>
                 </div>
                 <div className='flex flex-col gap-2 items-center '>
-                    <Link to="/apply-jo">
+                    <Link to="/apply-job">
                         <Button color='bright-sun.4' size='sm' variant='light'>Apply</Button>
                     </Link>
                     <IconBookmark className='text-bright-sun-400 cursor-pointer stroke={1.5}' />
