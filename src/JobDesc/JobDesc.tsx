@@ -68,7 +68,7 @@ const JobDesc = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-2 items-center '>
-                        <Link to="">
+                        <Link to="/company">
                             <Button color='bright-sun.4' variant='light'>Company Page</Button>
                         </Link>
                     </div>
