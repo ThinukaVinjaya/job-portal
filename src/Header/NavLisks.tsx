@@ -1,3 +1,4 @@
+import { url } from 'inspector';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -7,6 +8,7 @@ const NavLinks = () => {
         { name: 'Find Talent', url: 'find-talent' },
         { name: 'Post Job', url: 'post-job' },
         { name: 'Posted Job', url: 'posted-job' },
+        { name: 'Job History', url:'job-history'}
     ];
 
     const location = useLocation();

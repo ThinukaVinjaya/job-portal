@@ -4,6 +4,7 @@ import { MantineProvider, Slider, createTheme } from '@mantine/core';
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import '@mantine/tiptap/styles.css';
+import '@mantine/dates/styles.css'
 import HomePage from './Pages/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import FingJobs from './Pages/FindJobs';
