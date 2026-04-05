@@ -8,7 +8,7 @@ import TalentsCard from '../FindTalent/TalentsCard'
 
 const PostedJobDesc = () => {
   return (
-    <div className='mt-5 w-3/4 px-5'>
+    <div className='mt-5 w-2/3 px-5'>
        <div className='text-2xl font-semibold flex items-center'>Software Engineer
         <Badge variant='light' ml="sm" color='bright-sun.4' size="sm">Bage</Badge>
        </div>
@@ -34,7 +34,7 @@ const PostedJobDesc = () => {
             <Tabs.Panel value='invited'>
                  <div className='flex mt-10 flex-wrap gap-5 '>
                 {
-                    talents.map((talent, index)=> index < 6 && <TalentsCard key={index} {...talent} posted/> )
+                    talents.map((talent, index)=> index < 6 && <TalentsCard key={index} {...talent} invited/> )
                 }
                 </div>
             </Tabs.Panel>
