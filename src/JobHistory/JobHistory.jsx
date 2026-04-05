@@ -6,7 +6,7 @@ import Card from './Card'
 
 const JobHistory = () => {
     return (
-        <div className=''>
+        <div >
             <div className='text-2xl font-semibold mb-5'>Job History</div>
             <div>
                 <Tabs variant='outline' radius="lg" defaultValue="about">

@@ -3,9 +3,9 @@ import JobHistory from "../JobHistory/JobHistory"
 
 const JobHistoryPage = () => {
   return (
-    <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] px-4">
+    <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] px-3">
       <Divider size="xs" />
-           <div className='flex gap-5 '>
+           <div className='mt-7 ml-32 justify-center '>
              <JobHistory />
            </div>
     </div>
