@@ -14,7 +14,7 @@ const JobHistory = () => {
                         <Tabs.Tab value='applied'>Applied</Tabs.Tab>
                         <Tabs.Tab value='saved'>Saved</Tabs.Tab>
                         <Tabs.Tab value='offered'>offered</Tabs.Tab>
-                        <Tabs.Tab value='interviewing'>interviwing</Tabs.Tab>
+                        <Tabs.Tab value='interviewing'>interviewing</Tabs.Tab>
                     </Tabs.List>
 
                     <Tabs.Panel value='applied'>
@@ -41,7 +41,7 @@ const JobHistory = () => {
                     <Tabs.Panel value='interviewing'>
                         <div className='flex mt-10 flex-wrap gap-5'>
                         {
-                          jobList.map((job, index) => <JobCard key={index} {...job} interviewing/>)
+                          jobList.map((job, index) => <Card key={index} {...job} interviewing/>)
                         }
                       </div>
                     </Tabs.Panel>
