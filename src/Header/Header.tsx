@@ -5,8 +5,8 @@ import NavLisks from "./NavLisks";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-    const location = useLocation();
-    return location.pathname!="signup"?<></>:<div className="w-full text-white bg-mine-shaft-950 px-6 h-28 flex justify-between items-center  font-['poppins']">
+    return (
+   <div className="w-full text-white bg-mine-shaft-950 px-6 h-28 flex justify-between items-center  font-['poppins']">
 
         <Link to="/">
         <div className="flex gap-1 items-center text-bright-sun-400">
@@ -32,7 +32,7 @@ const Header = () => {
 
         </div>
     </div>
-
+    )
 }
 
 export default Header;

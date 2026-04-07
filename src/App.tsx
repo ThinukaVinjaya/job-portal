@@ -73,6 +73,7 @@ function App() {
           <Route path='/posted-job' element={<PostedJobPage />} />
           <Route path='/talent-profile' element={<TalentProfilePage />} />
           <Route path='/signup' element={<SignUpPage />} />
+          <Route path='/login' element={<SignUpPage />} />
           <Route path='*' element={<HomePage />} />
         </Routes>
         <Footer />
