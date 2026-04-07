@@ -8,7 +8,7 @@ const SignUpPage = () => {
   const location = useLocation()
   return (
     <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] overflow-hidden">
-      <div className={ `w-[100vw] h-[100vh] flex [&>*]:flex-shrink-0 ${location.pathname=='/signup'?'-translate-x-1/2':''}}`}>
+      <div className={`w-[100vw] h-[100vh] flex [&>*]:flex-shrink-0 ${location.pathname=='/signup'?'-translate-x-1/2':''}`}>
         <Login />
           <div className='w-1/2 h-full rounded-r-[200px] bg-mine-shaft-900 flex items-center gap-5 justify-center flex-col'>
                 <div className='flex gap-1 items-center text-bright-sun-400'>

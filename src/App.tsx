@@ -6,7 +6,7 @@ import '@mantine/carousel/styles.css';
 import '@mantine/tiptap/styles.css';
 import '@mantine/dates/styles.css'
 import HomePage from './Pages/HomePage';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import FingJobs from './Pages/FindJobs';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
@@ -23,7 +23,6 @@ import SignUp from './SignUpLogin/SignUp';
 import SignUpPage from './Pages/SignUpPage';
 
 function App() {
-
   const theme = createTheme({
     focusRing: 'never',
     fontFamily: 'Poppins, sans-serif',
@@ -60,27 +59,36 @@ function App() {
   return (
     <MantineProvider defaultColorScheme='dark' theme={theme}>
       <BrowserRouter>
-      <div className='relative'>
-        <Header />
-        <Routes>
-          <Route path='/find-jobs' element={<FindJobs />} />
-          <Route path='/find-talent' element={<FindTalentPage />} />
-          <Route path='/jobs' element={<JobDescPage />} />
-          <Route path='/company' element={<CompanyPage />} />
-          <Route path="/apply-job" element={<ApplyJobPage />} />
-          <Route path='/post-job' element={<PostJobPage />} />
-          <Route path='/job-history' element={<JobHistoryPage />} />
-          <Route path='/posted-job' element={<PostedJobPage />} />
-          <Route path='/talent-profile' element={<TalentProfilePage />} />
-          <Route path='/signup' element={<SignUpPage />} />
-          <Route path='/login' element={<SignUpPage />} />
-          <Route path='*' element={<HomePage />} />
-        </Routes>
-        <Footer />
-        </div>
+        <AppLayout />
       </BrowserRouter>
     </MantineProvider>
   );
+}
+
+function AppLayout() {
+  const location = useLocation()
+  const isAuthPage = location.pathname === '/login' || location.pathname === '/signup'
+
+  return (
+    <div className='relative'>
+      {!isAuthPage && <Header />}
+      <Routes>
+        <Route path='/find-jobs' element={<FindJobs />} />
+        <Route path='/find-talent' element={<FindTalentPage />} />
+        <Route path='/jobs' element={<JobDescPage />} />
+        <Route path='/company' element={<CompanyPage />} />
+        <Route path="/apply-job" element={<ApplyJobPage />} />
+        <Route path='/post-job' element={<PostJobPage />} />
+        <Route path='/job-history' element={<JobHistoryPage />} />
+        <Route path='/posted-job' element={<PostedJobPage />} />
+        <Route path='/talent-profile' element={<TalentProfilePage />} />
+        <Route path='/signup' element={<SignUpPage />} />
+        <Route path='/login' element={<SignUpPage />} />
+        <Route path='*' element={<HomePage />} />
+      </Routes>
+      {!isAuthPage && <Footer />}
+    </div>
+  )
 }
 
 export default App;
