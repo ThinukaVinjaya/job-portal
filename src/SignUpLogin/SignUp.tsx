@@ -33,9 +33,9 @@ const SignUp = () => {
       <TextInput withAsterisk leftSection={<IconAt style={{ width: rem(16), height: rem(16)}} />} label="Email" placeholder='Your email' value={email} onChange={(e) => setEmail(e.currentTarget.value)} />
       <PasswordInput withAsterisk leftSection={<IconLock style={{ width: rem(18), height: rem(18) }} stroke={1.5} />} label="Password" placeholder='Password' value={password} onChange={(e) => setPassword(e.currentTarget.value)} />
       <PasswordInput withAsterisk leftSection={<IconLock style={{ width: rem(18), height: rem(18) }} stroke={1.5} />} label="Confirm Password" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.currentTarget.value)} />
-      <Checkbox autoContrast label={<>I accept{' '}<Anchor>terms & conditions</Anchor></>} checked={termsAccepted} onChange={(e) => setTermsAccepted(e.currentTarget.checked)} />
+      <Checkbox autoContrast label={<>I accept{' '}<Anchor href='#'>terms & conditions</Anchor></>} checked={termsAccepted} onChange={(e) => setTermsAccepted(e.currentTarget.checked)} />
       <Button autoContrast variant='filled' onClick={handleSignUp}>Sign up</Button>
-      <div className='mx-auto'>Have an account?<Link to="/login" className='text-bright-sun-400 hover:underline'>Login</Link> </div>
+      <div className='mx-auto'>Have an account? <Link to="/login" className='text-bright-sun-400 hover:underline'>Login</Link></div>
     </div>
   )
 }
