@@ -2,10 +2,11 @@ import { Avatar, Indicator } from "@mantine/core";
 import avatar from "../assets/avatar.png";
 import { IconAnchor, IconAsset, IconBell, IconSettings } from "@tabler/icons-react";
 import NavLisks from "./NavLisks";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-    return <div className="w-full text-white bg-mine-shaft-950 px-6 h-28 flex justify-between items-center  font-['poppins']">
+    const location = useLocation();
+    return location.pathname!="signup"?<></>:<div className="w-full text-white bg-mine-shaft-950 px-6 h-28 flex justify-between items-center  font-['poppins']">
 
         <Link to="/">
         <div className="flex gap-1 items-center text-bright-sun-400">

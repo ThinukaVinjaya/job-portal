@@ -1,9 +1,11 @@
 import React from 'react';
 import { IconAnchor, IconBrandFacebook, IconBrandInstagram, IconBrandX } from '@tabler/icons-react';
 import { footerLinks } from '../Data/Data';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
-  return (
+  const location = useLocation();
+    return location.pathname!="signup"?<></>:
     <div className="pt-20 pb-10 flex flex-wrap gap-10 justify-around  bg-mine-shaft-950 font-['poppins']">
 
       {/* Left Section */}
@@ -48,7 +50,6 @@ const Footer = () => {
         </div>
       ))}
     </div>
-  );
 };
 
 export default Footer;
