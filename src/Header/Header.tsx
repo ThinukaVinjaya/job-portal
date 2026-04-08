@@ -1,8 +1,8 @@
 import { Avatar, Indicator } from "@mantine/core";
-import avatar from "../assets/avatar.png";
 import { IconAnchor, IconAsset, IconBell, IconSettings } from "@tabler/icons-react";
 import NavLisks from "./NavLisks";
 import { Link, useLocation } from "react-router-dom";
+import ProfileMenu from "./ProfileMenu";
 
 const Header = () => {
     return (
@@ -16,11 +16,7 @@ const Header = () => {
         </Link>     
         {NavLisks()}
         <div className="flex gap-3 items-center">
-
-            <div className="flex items-center gap-2">
-                <div>Thinuka</div>
-                <Avatar src={avatar} alt="It's me" />
-            </div>
+            <ProfileMenu/>
             <div className="bg-mine-shaft-900 p-1.5 rounded-full">
                 <IconSettings stroke={1.5} />
             </div>
