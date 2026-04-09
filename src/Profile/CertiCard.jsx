@@ -1,3 +1,5 @@
+import { ActionIcon } from '@mantine/core'
+import { IconTrash } from '@tabler/icons-react'
 import React from 'react'
 
 const CertiCard = (props) => {
@@ -13,13 +15,18 @@ const CertiCard = (props) => {
 
                 </div>
             </div>
-            <div className='flex flex-col items-end'>
-                <div className='text-sm text-mine-shaft-300'>
-                    {props.issueDate}
+            <div className='flex item-ceter gap-2'>
+                <div className='flex flex-col items-end'>
+                    <div className='text-sm text-mine-shaft-300'>
+                        {props.issueDate}
+                    </div>
+                    <div className='text-sm text-mine-shaft-300'>
+                        ID: {props.certificateId}
+                    </div>
                 </div>
-                <div className='text-sm text-mine-shaft-300'>
-                    ID: {props.certificateId}
-                </div>
+                {props.edit&&<ActionIcon size="lg" color='red.8' variant='light'>
+                    <IconTrash className='h-4/5 w-4/5' stroke={1.5} />
+                </ActionIcon>}
             </div>
         </div>
     )
