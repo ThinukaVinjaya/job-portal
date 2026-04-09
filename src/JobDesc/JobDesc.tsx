@@ -31,7 +31,7 @@ const JobDesc = (props:any) => {
             <div className='flex justify-between'>
                 {
                     card.map((item: any, index: number) => <div key={index} className='flex flex-col items-center gap-1'>
-                        <ActionIcon color='mine-shaft.7' className='!h-12 !w-12' variant='light' radius="xl" aria-label='Settings'>
+                        <ActionIcon color='bright-sun.4' className='!h-12 !w-12' variant='light' radius="xl" aria-label='Settings'>
                             <IconMapPin className='h-4/5 w-4/5' stroke={1.5} />
                         </ActionIcon>
                         <div className='text-sm text-mine-shaft-300'>Location</div>
@@ -44,7 +44,7 @@ const JobDesc = (props:any) => {
                 <div className='text-xl font-semibold mb-5'>Required Skills</div>
                 <div className='flex flex-wrap gap-2'>
                     {
-                        skills.map((item, index) => <ActionIcon color='mine-shaft.7' key={index} className='!h-fit !text-sm !w-fit' font-medium variant='light' p="xs" radius={'xl'} aria-label='Settings'>{item}
+                        skills.map((item, index) => <ActionIcon color='bright-sun.4' key={index} className='!h-fit !text-sm !w-fit' font-medium variant='light' p="xs" radius={'xl'} aria-label='Settings'>{item}
                         </ActionIcon>)
                     }
                 </div>
