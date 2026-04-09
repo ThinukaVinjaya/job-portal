@@ -21,6 +21,7 @@ import PostedJobPage from './Pages/PostedJobPage';
 import JobHistoryPage from './Pages/JobHistoryPage';
 import SignUp from './SignUpLogin/SignUp';
 import SignUpPage from './Pages/SignUpPage';
+import ProfilePage from './Pages/ProfilePage';
 
 function App() {
   const theme = createTheme({
@@ -84,6 +85,7 @@ function AppLayout() {
         <Route path='/talent-profile' element={<TalentProfilePage />} />
         <Route path='/signup' element={<SignUpPage />} />
         <Route path='/login' element={<SignUpPage />} />
+        <Route path='/profile' element={<ProfilePage />} />
         <Route path='*' element={<HomePage />} />
       </Routes>
       {!isAuthPage && <Footer />}
